@@ -15,77 +15,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintViewModel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/border_card_green"
-            android:backgroundTint="#EEEDED"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <TextView
-                android:id="@+id/titleViewModel"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="VIEW MODEL"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <Button
-                android:id="@+id/btnSoma"
-                android:layout_width="200dp"
-                android:layout_height="48dp"
-                android:backgroundTint="@color/teal_700"
-                android:text="soma Mais 1!"
-                android:textColor="@color/white"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.497"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/titleViewModel" />
-
-            <TextView
-                android:id="@+id/result"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Resultado:"
-                app:layout_constraintBottom_toBottomOf="@+id/receivedMessage"
-                app:layout_constraintEnd_toStartOf="@+id/receivedMessage"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/receivedMessage" />
-
-            <TextView
-                android:id="@+id/receivedMessage"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:background="@drawable/border_card_green"
-                android:backgroundTint="@color/white"
-                android:textColor="@color/black"
-                android:textSize="22sp"
-                app:layout_constraintEnd_toEndOf="@+id/btnSoma"
-                app:layout_constraintStart_toStartOf="@+id/btnSoma"
-                app:layout_constraintTop_toBottomOf="@+id/btnSoma"
-                tools:text="0" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-        <androidx.constraintlayout.widget.ConstraintLayout
+         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintView"
+            android:padding="16dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="48dp"
-            android:background="@drawable/border_card_blue"
-            android:backgroundTint="#EEEDED"
+            android:background="#EEEDED"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/constraintViewModel">
+            app:layout_constraintStart_toStartOf="parent">
 
             <TextView
                 android:id="@+id/titleView"
@@ -101,11 +40,10 @@
                 android:id="@+id/btnSomaView"
                 android:layout_width="200dp"
                 android:layout_height="48dp"
-                android:backgroundTint="@color/purple_700"
+                android:backgroundTint="#FF3700B3"
                 android:text="soma Mais 1!"
-                android:textColor="@color/white"
+                android:textColor="#ffffff"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.497"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/titleView" />
 
@@ -124,9 +62,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:background="@drawable/border_card_blue"
-                android:backgroundTint="@color/white"
-                android:textColor="@color/black"
+                android:background="#ffffff"
+                android:textColor="#FF000000"
+                android:padding="8dp"
                 android:textSize="22sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/btnSomaView"
