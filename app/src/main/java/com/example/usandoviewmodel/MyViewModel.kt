@@ -1,5 +1,6 @@
 package com.example.usandoviewmodel
 
+import android.util.Log
 import androidx.lifecycle.ViewModel
 
 class MyViewModel: ViewModel() {
@@ -14,5 +15,10 @@ class MyViewModel: ViewModel() {
 
         number++
         return number
+    }
+
+    override fun onCleared() {
+        super.onCleared()
+        Log.i("Estou no ", "onCleared-ViewModel")
     }
 }
