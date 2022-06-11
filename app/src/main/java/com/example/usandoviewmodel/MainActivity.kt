@@ -96,4 +96,9 @@ class MainActivity : AppCompatActivity() {
         super.onDestroy()
         Log.i("Estou no ", "onDestroy")
     }
+
+    override fun finish() {
+        super.finish()
+        Log.i("Estou no ", "SecondActivity - finish")
+    }
 }

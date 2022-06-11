@@ -49,4 +49,9 @@ class SecondActivity : AppCompatActivity() {
         super.onDestroy()
         Log.i("Estou no ", "SecondActivity - onDestroy")
     }
+
+    override fun finish() {
+        super.finish()
+        Log.i("Estou no ", "SecondActivity - finish")
+    }
 }
